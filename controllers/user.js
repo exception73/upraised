@@ -118,6 +118,8 @@ export const login = async(req, res) => {
         }
         
 
+        
+
         const passwordCheck = await user.matchPassword(password);
 
         if (!passwordCheck) {
